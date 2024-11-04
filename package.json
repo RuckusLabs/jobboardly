@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "sass": "^1.80.6"
+  },
+  "scripts": {
+    "watch": "sass --watch styles/_index.scss --style=compressed style.css"
   }
 }
