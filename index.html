@@ -6,53 +6,417 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>job boardly.</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <script src="index.js"></script>
   <section id="ribbon">
     <div class="wrapper">
       <p>Special lifetime offer: Lifetime account, one time payment.</p>
-      <button>⚡️ Get job boardly.</button>
+      <a class="button" href="#">⚡️ Get <img class="filter--blue" src="images/job-boardly-logo.svg" alt="Job Boardly." /></a>
     </div>
   </section>
   <nav>
     <div class="wrapper">
-      <h1>job boardly.</h1>
-      <ul>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Testimonials</a></li>
-        <li><a href="#">FAQ</a></li>
+      <h1><img class="filter--blue" src="images/job-boardly-logo.svg" alt="Job Boardly." /></h1>
+      <button id="menu-toggle" aria-label="Toggle menu."></button>
+      <ul id="nav-menu">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#faq">FAQ</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#" class="callout">Demo</a></li>
-        <li><a href="#">Login</a></li>
+        <li><a href="#demo" class="callout">Demo</a></li>
+        <li><a href="https://app.jobboardly.com/session/new">Login</a></li>
       </ul>
     </div>
   </nav>
-  <section id="intro">
-    <div class="wrapper">
-      <h2>Launch your online business. Fast. <span class="callout--blue">No monthly subscription.</span></h2>
-      <p>Job Boardly is everything you need to build a job board and make money online.</p>
-      <div class="product-hunt">Product Hunt</div>
-      <div class="cta">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/9YlL42k2uUM?si=wl05BCrDKbv7Ulpl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <section id="intro" class="wrapper">
+    <h2>Launch your online business. Fast. <span class="callout--blue">No monthly subscription.</span></h2>
+    <p>Job Boardly is everything you need to build a job board and make money online.</p>
+    <div class="product-hunt flex-center">
+      <a href="https://www.producthunt.com/posts/job-boardly?utm_source=badge-featured&amp;utm_medium=badge&amp;utm_souce=badge-job-boardly" target="_blank">
+        <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=454955&amp;theme=light" alt="Job Boardly - Launch a fully-functional, SEO-friendly job board in minutes | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54">
+      </a>
+    </div>
+    <div class="row flex-center">
+      <div class="video">
+        <div id="video-preview">
+          <iframe allow="autoplay" src="https://www.youtube.com/embed/9YlL42k2uUM?si=wl05BCrDKbv7Ulpl?autoplay=1" title="Job Boardly demo with Co-Founder Kyle" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+        </div>
+        <p class="caption">Getting started with Job Boardly. Hosted by Co-Founder Kyle.</p>
+      </div>
+      <div class="cta-buy cta-mini">
+        <span class="badge callout--blue">Special offer: Lifetime account, one time payment.</span>
+        <a class="button button-blue" href="#">
+          ⚡️ Get <img src="images/job-boardly-logo.svg" alt="Job Boardly." />
+        </a>
+        <span class="social-proof">️‍🔥 326 bought launch discount (23 left)</span>
+        <img alt="Checkout securly using Stripe." src="images/stripe-trust-badge.png" />
+        <div class="senja-embed" data-id="0e2b65c4-8c71-4c4b-b8cb-547a0d484113" data-mode="shadow" data-lazyload="false" style="display: block;"></div>
       </div>
     </div>
   </section>
-  <section id="testimonials">
-    <div class="wrapper">
-      <div class="senja-embed" data-id="c184eb68-e750-4a7c-817a-257088747abe" data-mode="shadow" data-lazyload="false" style="display: block;"></div>
 
+  <section id="partners" class="wrapper">
+    <h2><span class="callout--blue">Join the crowd.</span><br>Over 300 job boards are already using Job Boardly.</h2>
+    <ul id="partner-grid">
+      <li aria-label="Hey Marketers"><a href="https://www.heymarketers.com/"><img alt="Hey Marketers logo." src="images/partner-logos/hey-marketers.png" /></a></li>
+      <li aria-label="Drone Pilot Jobs"><a href="https://dronepilotjobs.co.uk/"><img alt="Drone Pilot Jobs logo." src="images/partner-logos/drone-pilot-jobs.png" /></a></li>
+      <li aria-label="Go Rails"><a href="https://jobs.gorails.com/"><img alt="Go Rails logo." src="images/partner-logos/gorails.svg" /></a></li>
+      <li aria-label="Get Outdoor Jobs"><a href="https://www.getoutdoorjobs.com/"><img alt="Get Outdoor Jobs logo." src="images/partner-logos/get-outdoor-jobs.png" /></a></li>
+      <li aria-label="Tradie Jobs"><a href="https://tradiejobs.com.au/"><img alt="Tradie Jobs logo." src="images/partner-logos/tradie-jobs.png" /></a></li>
+      <li aria-label="Jobs Worktugal"><a href="https://jobs.worktugal.com/"><img alt="Jobs Worktugal logo." src="images/partner-logos/worktugal.png" /></a></li>
+    </ul>
+    <div class="row cta flex-center">
+      <div class="senja-embed" data-id="0e2b65c4-8c71-4c4b-b8cb-547a0d484113" data-mode="shadow" data-lazyload="false" style="display: block;"></div>
+      <div class="cta-buy cta-mini">
+        <span class="badge callout--blue">Special offer: Lifetime account, one time payment.</span>
+        <a class="button button-blue" href="#">
+          ⚡️ Get <img src="images/job-boardly-logo.svg" alt="Job Boardly." />
+        </a>
+        <span class="social-proof">️‍🔥 326 bought launch discount (23 left)</span>
+        <img alt="Checkout securly using Stripe." src="images/stripe-trust-badge.png" />
+      </div>
     </div>
   </section>
+
+  <section id="features">
+    <div class="wrapper">
+      <h2><span class="callout--blue">Tons of built-in, easy-to-use features.</span> <br />Without the monthly subscription.</h2>
+      <p>Choose a niche based on an industry you're familiar with and easily launch your own digital online business with Job Boardly. With lifetime access you can build your business over months or years and never worry about ongoing fees while enjoying ongoing support and feature updates.</p>
+      <div class="feature-grid">
+        <div class="feature" id="feature-1">
+          <h3><img src="images/feature-icons/paywall-icon.svg" alt="Paywall" />Paywall <span class="badge--orange">New</span></h3>
+          <p>Charge users for access to your job board for a weekly, monthly or yearly subscription fee. One of the best monetizations in the industry.</p>
+          <button class="open-modal arrow" data-modal="modal-paywall">Learn More</button>
+        </div>
+        <div class="feature" id="feature-2">
+          <h3><img src="images/feature-icons/turbo-backfiller-icon.svg" alt="Turbo Backfiller" />Turbo Backfiller</h3>
+          <p>Unlock the full potential of your job board with Turbo Backfiller. Watch your job posts grow without lifting a finger.</p>
+          <button class="open-modal arrow" data-modal="modal-turbo-backfiller">Learn More</button>
+        </div>
+        <div class="feature" id="feature-3">
+          <h3><img src="images/feature-icons/magic-aggregator-icon.svg" alt="Magic Aggregator" />Magic Aggregator</h3>
+          <p>Elevate your job board with Magic Aggregator. Automatically import jobs from various career sites using our tailored import tool.</p>
+          <button class="open-modal arrow" data-modal="modal-magic-aggregator">Learn More</button>
+        </div>
+        <div class="feature" id="feature-4">
+          <h3><img src="images/feature-icons/no-code-icon.svg" alt="No code" />No Code</h3>
+          <p>Don't spend your time learning to code or searching for a developer. Launch your job board and focus on growing your business.</p>
+          <button class="open-modal arrow" data-modal="modal-no-code">Learn More</button>
+        </div>
+        <div class="feature" id="feature-all-features">
+          <div class="row">
+            <div>
+              <h3><img src="images/feature-icons/all-features-icon.svg" alt="No code" />All Features</h3>
+              <p>Over a dozen features. With more coming soon.</p>
+            </div>
+            <div class="feature-list">
+              <ul class="fade">
+                <li>Custom Domains</li>
+                <li>Job Alerts</li>
+                <li>SEO Tools</li>
+                <li>Customization</li>
+                <li>Stripe Integration</li>
+              </ul>
+              <button class="open-modal arrow" data-modal="modal-all-features">See All Features</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature Modals -->
+    <div id="modal-all-features" class="modal">
+      <div class="modal-content">
+        <button aria-label="Close modal." class="close no-arrow"></button>
+        <div class="wrapper">
+          <h4><img src="images/feature-icons/all-features-icon.svg" alt="No code icon.">All Features</h4>
+          <ul>
+            <li><button class="open-modal arrow" data-modal="modal-lifetime-access">Lifetime Access</button></li>
+            <li><button class="open-modal arrow" data-modal="modal-paywall">Paywall</button></li>
+            <li><button class="open-modal arrow" data-modal="modal-turbo-backfiller">Turbo Backfiller</button></li>
+            <li><button class="open-modal arrow" data-modal="modal-magic-aggregator">Magic Aggregator</button></li>
+            <li><button class="open-modal arrow" data-modal="modal-job-posts">Job Posts</button></li>
+            <li><button class="open-modal arrow" data-modal="modal-custom-domains">Custom Domains</button></li>
+            <li><button class="open-modal arrow" data-modal="modal-no-code">No Code</button></li>
+            <li><button class="open-modal arrow" data-modal="modal-job-alerts">Job Alerts</button></li>
+            <li><button class="open-modal arrow" data-modal="modal-seo-tools">SEO Tools</button></li>
+            <li><button class="open-modal arrow" data-modal="modal-custom-pages">Custom Pages</button></li>
+            <li><button class="open-modal arrow" data-modal="modal-mobile-friendly">Mobile Friendly</button></li>
+            <li><button class="open-modal arrow" data-modal="modal-design-options">Design Options</button></li>
+            <li><button class="open-modal arrow" data-modal="modal-stripe-integration">Stripe Integration</button></li>
+            <li><button class="open-modal arrow" data-modal="modal-coupon-codes">Coupon Codes</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-lifetime-access" class="modal">
+      <div class="modal-content">
+        <button aria-label="Close modal." class="close no-arrow"></button>
+        <div class="wrapper">
+          <button class="open-modal inline-link back" data-modal="modal-all-features">View All Features</button>
+          <h4>Lifetime Access</h4>
+          <p>We offer simple plans packed with powerful features for growing and backfilling your job board in any niche. One-time Payment, no subscription required. Pay once and run your job board forever. You can even change your domain or niche in the future if you choose. It's completely yours to keep!</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-paywall" class="modal">
+      <div class="modal-content">
+        <button aria-label="Close modal." class="close no-arrow"></button>
+        <div class="wrapper">
+          <button class="open-modal inline-link back" data-modal="modal-all-features">View All Features</button>
+          <h4><img src="images/feature-icons/paywall-icon.svg" alt="Paywall icon.">Paywall</h4>
+          <p>Paywalled job boards are proven money machines! It is one of the best monetizations in the industry and it's coming very soon to Job Boardly. Available only on our Scale plan, subscribe now for early access.</p>
+          <div class="image-wrapper fade">
+            <img alt="A screenshot of the Paywall feature within the Job Boardly dashboard." src="images/feature-images/paywall.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-turbo-backfiller" class="modal">
+      <div class="modal-content">
+        <button aria-label="Close modal." class="close no-arrow"></button>
+        <div class="wrapper">
+          <button class="open-modal inline-link back" data-modal="modal-all-features">View All Features</button>
+          <h4><img src="images/feature-icons/turbo-backfiller-icon.svg" alt="Paywall icon.">Turbo Backfiller</h4>
+          <h5>Backfill your job board effortlessly with the Turbo Backfiller</h5>
+          <p>Unleash the power of the Turbo Backfiller, our flagship feature integrated into Job Boardly. This cutting-edge tool operates seamlessly through an API connection, tapping into a vast database of approximately 6 million active job listings. Use our advance matching system to customize your backfillers by job titles, keywords, industry, location & more.</p>
+          <p>With the Turbo Backfiller, your job board receives a robust infusion of diverse and current job opportunities, enhancing content richness without manual effort. Experience the efficiency of automated backfilling, ensuring your users have access to a wide array of up-to-date job postings at all times. It backfills so fast it's like putting your job board on steroids, that's why we had to put "Turbo" in the title.</p>
+          <p>For additional help with the Turbo Backfiller check out our <a href="https://jobboardly.com/support/turbo-backfiller">help article here.</a></p>
+          <div class="image-wrapper fade">
+            <img alt="A screenshot of the Turbo Backfiller feature within the Job Boardly dashboard." src="images/feature-images/turbo-backfiller.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-magic-aggregator" class="modal">
+      <div class="modal-content">
+        <button aria-label="Close modal." class="close no-arrow"></button>
+        <div class="wrapper">
+          <button class="open-modal inline-link back" data-modal="modal-all-features">View All Features</button>
+          <h4><img src="images/feature-icons/magic-aggregator-icon.svg" alt="Magic Aggregator icon.">Magic Aggregator</h4>
+          <p>Precision meets simplicity with Job Boardly's Magic Aggregator. This feature provides users with a surgical approach to job backfilling, allowing for targeted content acquisition. Users can easily add specific URLs, whether from a company's career page or a public Applicant Tracking System (ATS) page.</p>
+          <p>The Magic Aggregator then "automagically" integrates these jobs into your job board, offering a customizable and curated approach to content enrichment. Tailor your job board's offerings with precision, ensuring relevance and value for both job seekers and employers alike. It's so easy it practically feels like magic...</p>
+          <p>For additional help with the Magic Aggregator read our <a href="https://www.jobboardly.com/support/getting-started-with-the-magic-aggregator">help article here.</a></p>
+          <div class="image-wrapper fade">
+            <img alt="A screenshot of the Magic Aggregator feature within the Job Boardly dashboard." src="images/feature-images/magic-aggregator.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-no-code" class="modal">
+      <div class="modal-content">
+        <button aria-label="Close modal." class="close no-arrow"></button>
+        <div class="wrapper">
+          <button class="open-modal inline-link back" data-modal="modal-all-features">View All Features</button>
+          <h4><img src="images/feature-icons/no-code-icon.svg" alt="No code icon.">No Code</h4>
+          <p>We've designed our platform to be as user-friendly as possible, allowing anyone to create a fully functional job board without writing a line of code.</p>
+          <p>So whether you're a small business owner, a recruiter, or a niche job board operator, Job Boardly is the perfect solution for creating a custom job board without the need for any coding expertise.</p>
+          <p>Creating a custom job board is just the beginning. Once you're up and running, you can take advantage of Job Boardly's powerful features, including SEO optimization, email subscriber management, and payment options.</p>
+          <p>With automatic Google Jobs integration and an SEO-friendly design, we make it easy for job seekers to find your job board and for employers to find the right candidates.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="demo" class="wrapper">
+    <h2><span class="callout--blue">Launch in less than 5 minutes.</span> <br>Don't believe it? Watch this.</h2>
+    <div class="row flex-center">
+      <div class="video">
+        <div id="video-preview">
+          <iframe allow="autoplay" src="https://www.youtube.com/embed/9YlL42k2uUM?si=wl05BCrDKbv7Ulpl?autoplay=1" title="Job Boardly demo with Co-Founder Kyle" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+        </div>
+        <p class="caption">Getting started with Job Boardly. Hosted by Co-Founder Kyle.</p>
+      </div>
+      <div class="cta-buy cta-mini">
+        <span class="badge callout--blue">Special offer: Lifetime account, one time payment.</span>
+        <a class="button button-blue" href="#">
+          ⚡️ Get <img src="images/job-boardly-logo.svg" alt="Job Boardly." />
+        </a>
+        <span class="social-proof">️‍🔥 326 bought launch discount (23 left)</span>
+        <img alt="Checkout securly using Stripe." src="images/stripe-trust-badge.png" />
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="wrapper">
+    <h2><span class="callout--blue">Simple pricing.</span> <br>No committment.</h2>
+    <div class="row flex-center">
+      <ul class="list--checkmark">
+        <li>Unlimited Lifetime Account</li>
+        <li>One-time Payment</li>
+        <li>1 Job board</li>
+        <li>Paywall <span class="badge--orange">NEW</span></li>
+        <li>Turbo Backfiller</li>
+        <li>Magic Aggregator</li>
+        <li>CSV importer <span class="badge--orange">NEW</span></li>
+        <li>Unlimited jobs</li>
+        <li>Unlimited traffic</li>
+        <li>Unlimited pages</li>
+        <li>Charge for job posts</li>
+        <li>Built-in SEO tools</li>
+        <li>Customizable job categories</li>
+        <li>Payment processing via Stripe</li>
+        <li>Google Jobs integration</li>
+        <li>Custom domains</li>
+        <li>Custom code</li>
+        <li>Multi-language support</li>
+        <li>RSS feed</li>
+        <li>Remove Job Boardly branding <span class="badge">+$100</span></li>
+        <li>Company Pages <span class="badge callout--blue">COMING SOON</span></li>
+        <li>XML imports <span class="badge callout--blue">COMING SOON</span></li>
+      </ul>
+      <div class="pricing-cta">
+        <p class="headline">Pay once. Own it forever.</p>
+        <p class="pricing"><span class="price">$297</span>USD</p>
+        <p class="secondary">Standard price: <s>$1,197/year</s></p>
+        <div class="cta-buy">
+          <span class="badge callout--blue">Special offer: Lifetime account, one time payment.</span>
+          <a class="button button-blue" href="#">
+            Get <img src="images/job-boardly-logo.svg" alt="Job Boardly." />
+          </a>
+          <span class="social-proof">️‍🔥 326 bought launch discount (23 left)</span>
+          <img alt="Checkout securly using Stripe." src="images/stripe-trust-badge.png" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <div class="wrapper">
+      <h2><span class="callout--blue">We love our customers.</span><br /> And they love us, too.</h2>
+      <div class="senja-embed" data-id="c184eb68-e750-4a7c-817a-257088747abe" data-mode="shadow" data-lazyload="true" style="display: block;"></div>
+    </div>
+  </section>
+
+  <section id="faq" class="wrapper">
+    <h2><span class="callout--blue">Have more questions?</span> <br />We have answers.</h2>
+
+    <div class="container--gray">
+      <p><span class="callout--blue">We've compiled the most frequently asked questions.</span> Can't find an answer? <a class="callout--blue" href="#">Contact us.</a></p>
+      <ul class="faq-list">
+        <li>
+          <p>What is Job Boardly?</p>
+          <p>Job Boardly is an all-in-one platform for building your online business, designed to grow and monetize any job board in any niche you're familiar with. Our goal is to make is as easy as possible for you to create your online business, monetize and attract more traffic and leads.</p>
+        </li>
+        <li>
+          <p>Why start a job board as my online business?</p>
+          <p>There are a lot of great reasons to start a job board as an online business and a way to make additional income online. For starters, there is no physical inventory and it is a 100% digital product. This also means you keep everything you make and margins are typically very high. In the United States alone, there are millions of job seekers at any given time. Currently it's estimated that 10 million people actively looking for jobs in the US. Additionally, you also have people who
+            are currently employed but still looking around for new opportunities. In other words, the total market is huge and you only need to carve out a very tiny niche for yourself in order to make money.</p>
+        </li>
+        <li>
+          <p>Who is Job Boardly for?</p>
+          <p>Job Boardly is for anyone looking to build their business online, increasing the domain authority of an existing website or business or foster more engagement within their community. When we created Job Boardly we wanted to make it easy for anyone to launch and monetize their own job board in any niche.</p>
+        </li>
+        <li>
+          <p>How quickly can I set up my job board using Job Boardly?</p>
+          <p>Job Boardly is designed for quick and easy setup. In just a few minutes, you can have your job board ready to go with our intuitive dashboard.</p>
+        </li>
+        <li>
+          <p>Can I customize the appearance of my job board to match my brand?</p>
+          <p>Absolutely! Job Boardly offers easy customization options, allowing you to personalize the look and feel of your job board, including logo, colors, and branding elements.</p>
+        </li>
+        <li>
+          <p>Can I connect my own domain?</p>
+          <p>Indeed you can! Job Boardly empowers you to seamlessly connect your own domain to your job board. The process is quick and easy, ensuring that your job board reflects your brand identity effortlessly. If you have any questions or need assistance during the domain connection process, our support team is here to help.</p>
+        </li>
+        <li>
+          <p>Who is Job Boardly for?</p>
+          <p>Job Boardly is for anyone looking to build their business online, increasing the domain authority of an existing website or business or foster more engagement within their community. When we created Job Boardly we wanted to make it easy for anyone to launch and monetize their own job board in any niche.</p>
+        </li>
+        <li>
+          <p>Is there a limit to the number of job postings or users on Job Boardly?</p>
+          <p>With Job Boardly, there are no limits or caps the number of job postings or job alerts. Enjoy the freedom to scale your job board without restrictions.</p>
+        </li>
+        <li>
+          <p>How can I backfill jobs on my board using Job Boardly?</p>
+          <p>Job Boardly provides an automatic backfill feature, allowing you to enrich your job board with relevant content from various sources. Customize the backfill based on category, country, and keyword preferences. You can use either of our best-in-class backfilling tools; the Magic Aggregator or the Turbo Backfiller. You are able to backfill jobs manually or by using our CSV import tool or XML import tool (both currently in development).</p>
+        </li>
+        <li>
+          <p>How do Backfiller credits work?</p>
+          <p>The Turbo Backfiller is one of our most powerful features. It allows you to access our API of 7 million+ active job listings sourced from all over the internet. Backfill credits can be purchased in the app starting at $0.009 per API credit in increments of 1,000 credits for $9 each. Credits only apply to the Turbo Backfiller and Magic Aggregator. Our backfill API gives you access to 7 million+ active job listings. The credit system is pay-as-you go. Only top up when you need, no
+            subscription
+            required. Credits do not expire. Using our backfill API is completely optional, you can also backfill manually using our other backfill tools.</p>
+        </li>
+        <li>
+          <p>Can I remove Job Boardly branding?</p>
+          <p>Yes, you can remove Job Boardly branding for a one-time fee of $100. Email <a href="mailto:hello@jobboardly.com">hello@jobboardly.com</a> for assistance with this.</p>
+        </li>
+        <li>
+          <p>Are there any additional fees or costs?</p>
+          <p>There are no additional fees or costs for using Job Boardly. All features and updates are included. The only additional things available to purchase are backfill API credits or whitelabel, both of which are completely optional.</p>
+        </li>
+        <li>
+          <p>Which languages are supported?</p>
+          <p>You can create your job board in any language! Currently we support the following languages; English, Spanish, Portuguese, Portuguese (Brazilian), Finnish, Dutch, French Coming soon: German, Estonian Is your language not listed here? We are happy to add any language for paying customers. Just email <a href="mailto:hello@jobboardly.com">hello@jobboardly.com</a> and we will help you out. Note: there is a minimum 14 day wait for new languages to be added and you must purchase your
+            license first.</p>
+        </li>
+        <li>
+          <p>Can I integrate with WordPress?</p>
+          <p>Short answer, yes! We have many WordPress users and the most common way to use a subdomain (ex. jobs.yourdomain.com). This is the best way to maximize all the SEO benefits of Job Boardly, including our Google Jobs integration and increasing your domain authority, while maintaining your current site.</p>
+        </li>
+        <li>
+          <p>Who is behind Job Boardly?</p>
+          <p>We are Kyle and Jason. Two makers who like building software that helps other makers and entrepreneurs build and market their businesses online. We started Job Boardly in February of 2023 with the simple goal if making powerful job board software that is easy to use and affordable.</p>
+        </li>
+        <li>
+          <p>Is Job Boardly fully hosted?</p>
+          <p>Yes! Job Boardly is fully hosted by us and hosting is included. You do not need to host it on your own and you do not need to pay any extra for hosting. Pretty dang good, right?!</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="wrapper">
+    <div class="cta-buy cta-mini">
+      <span class="badge callout--blue">Special offer: Lifetime account, one time payment.</span>
+      <a class="button button-blue" href="#">
+        ⚡️ Get <img src="images/job-boardly-logo.svg" alt="Job Boardly." />
+      </a>
+      <span class="social-proof">️‍🔥 326 bought launch discount (23 left)</span>
+      <img alt="Checkout securly using Stripe." src="images/stripe-trust-badge.png" />
+    </div>
+  </section>
+
+  <footer class="wrapper">
+    <ul class="links">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="mailto:hello@jobboardly.com">Support</a></li>
+      <li><a href="https://jobboardly.getrewardful.com/signup">Earn $50 for each sale</a></li>
+      <li><a href="https://www.facebook.com/groups/jobboardpreneurs">Jobboardpreneurs</a></li>
+      <li class="flex-push-left"><a href="#">Terms</a></li>
+      <li><a href="#">Privacy</a></li>
+    </ul>
+    <hr>
+    <ul class="links">
+      <li>
+        <h1><img class="logo" src="images/job-boardly-logo.svg" alt="Job Boardly." /></h1>
+      </li>
+      <li class="flex-push-left">
+        <ul class="social">
+          <li><a href="https://www.linkedin.com/company/job-boardly"><img alt="job boardly on LinkedIn" src="images/footer-icons/linkedin.svg"></a></li>
+          <li><a href="https://twitter.com/job_boardly"><img alt="job boardly on X" src="images/footer-icons/x.svg"></a></li>
+          <li><a href="mailto:hello@jobboardly.com"><img alt="email job boardly." src="images/footer-icons/mail.svg"></a></li>
+        </ul>
+      </li>
+
+    </ul>
+  </footer>
+  <p class="wrapper subfooter"><span id="current-year"></span> Sourced Partner, LLC. All rights reserved.</p>
 </body>
 
+<script src="https://widget.senja.io/widget/0e2b65c4-8c71-4c4b-b8cb-547a0d484113/platform.js" type="text/javascript" async></script>
 <script src="https://widget.senja.io/widget/c184eb68-e750-4a7c-817a-257088747abe/platform.js" type="text/javascript" async></script>
 
+<script src="scripts/index.js"></script>
+<script src="scripts/youtube-swap.js"></script>
 
 </html>
