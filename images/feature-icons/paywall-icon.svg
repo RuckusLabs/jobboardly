@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 6</title>
+    <g id="v2.2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="JB-Landing-Page-(v1.2.2)" transform="translate(-287, -2316)">
+            <g id="Group-31" transform="translate(234, 1949)">
+                <g id="Group-6" transform="translate(53, 367)">
+                    <rect id="Rectangle" fill="#0060FF" x="0" y="0" width="26" height="26" rx="9"></rect>
+                    <g id="Group" transform="translate(9, 6)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4">
+                        <line x1="4.00000002" y1="0" x2="4.00000002" y2="15" id="Path"></line>
+                        <path d="M7.33333338,2.72727273 L2.33333335,2.72727273 C1.04466892,2.72727273 0,3.79568412 0,5.11363636 C0,6.43158861 1.04466892,7.5 2.33333335,7.5 L5.6666667,7.5 C6.95533111,7.50000003 8,8.56841141 8,9.88636364 C8,11.2043159 6.95533111,12.2727273 5.6666667,12.2727273 L0,12.2727273" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
