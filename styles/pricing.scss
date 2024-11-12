@@ -1,0 +1,89 @@
+#pricing {
+  border-radius: 20px;
+  background-color: var(--color-gray);
+  padding: 50px;
+  max-width: 1080px;
+
+  @include mobile {
+    padding: 25px;
+  }
+
+  .row {
+    margin-top: 25px;
+    justify-content: space-between;
+  }
+
+  ul {
+    list-style-type: none;
+    column-count: 2;
+    margin-right: 50px;
+
+    @include mobile {
+      column-count: 1;
+      margin-right: 0;
+    }
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+  }
+  
+  li + li {
+    margin-top: 20px;
+  }
+
+  li:before {
+    display: block;
+    margin-right: 10px;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-image: url(images/icons/checkmark--blue.svg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .pricing-cta {
+    max-width: 313px;
+    padding: 75px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 18px;
+
+    @include mobile {
+      margin-top: 50px;
+      padding: 25px;
+    }
+
+    .headline {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .pricing {
+      font-weight: 700;
+      margin: 15px auto;
+    }
+
+    .price {
+      font-size: 48px;
+      color: var(--color-blue);
+    }
+
+    .secondary {
+      margin-top: 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+  .cta-buy {
+    margin-top: 50px;
+  }
+}

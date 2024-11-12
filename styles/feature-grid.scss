@@ -1,0 +1,149 @@
+@forward 'helpers';
+
+#features {
+
+  h2+p {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 35px;
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+
+  .feature-grid {
+    display: grid;
+    gap: 15px;
+    margin-top: 50px;
+    grid-template-columns: repeat(6, 1fr);
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .feature {
+    border-radius: 20px;
+    background-color: var(--color-gray);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+
+    @include mobile {
+      padding: 25px;
+    }
+
+    &.full-width {
+      width: 100%;
+    }
+
+    h3 {
+      display: flex;
+      align-items: center;
+      color: var(--color-blue);
+
+      img {
+        margin-right: 5px;
+      }
+    }
+
+    p {
+      font-size: 24px;
+      font-weight: 300;
+      margin-top: 30px;
+      margin-bottom: 50px;
+      
+      @include mobile {
+        font-size: 18px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    button {
+      padding: 0;
+      color: var(--color-blue);
+      font-size: 14px;
+      display: flex;
+      letter-spacing: -0.3px;
+      float: right;
+      margin-top: auto;
+      margin-left: auto;
+
+      &:after {
+        @extend .filter--blue;
+        margin-left: 10px;
+        top: -2px;
+      }
+
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
+
+  #feature-1 {
+    grid-column: span 4;
+  }
+
+  #feature-2 {
+    grid-column: span 2;
+  }
+
+  #feature-3,
+  #feature-4 {
+    grid-column: span 3;
+  }
+
+  #feature-1, #feature-2, #feature-3, #feature-4 {
+    @include mobile {
+      grid-column: span 6;
+    }
+  }
+
+  #feature-all-features {
+
+    grid-column: span 6;
+
+    p {
+      font-size: 38px;
+      width: 50%;
+      clear: right;
+      float: left;
+
+      @include mobile {
+        width: 100%;
+        font-size: 28px;
+      }
+    }
+
+    .feature-list {
+      float: right;
+      display: flex;
+      flex-direction: column;
+    }
+
+    ul {
+      list-style-type: none;
+      font-size: 18px;
+      float: right;
+      margin-right: 50px;
+      position: relative;
+    }
+
+    button {
+      position: relative;
+      margin-top: 20px;
+
+      @include mobile {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    }
+  }
+}

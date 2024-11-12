@@ -1,0 +1,45 @@
+#intro {
+  margin-top: 75px;
+
+  &.wrapper {
+    max-width: 1010px;
+  }
+
+  h2 {
+    font-size: 62px;
+    text-align: center;
+    font-weight: 700;
+
+    @include mobile {
+      font-size: 38px;
+    }
+  }
+
+  > p {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 35px;
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+
+  .product-hunt {
+    margin: 50px auto;
+  }
+
+  .cta-mini {
+    transform: scale(0.8);
+
+    @include mobile {
+      margin-top: 50px;
+      transform: scale(1);
+    }
+  }
+
+  .senja-embed {
+    margin-top: 15px;
+  }
+}

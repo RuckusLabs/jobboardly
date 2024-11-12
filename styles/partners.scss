@@ -1,0 +1,38 @@
+#partners {
+  #partner-grid {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 150px;
+    margin-top: 50px;
+
+    @include mobile {
+      align-items: center;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .cta {
+    margin-top: 50px;
+  }
+
+  .cta-buy.cta-mini {
+    margin: 0;
+    margin-left: 50px;
+
+    @include mobile {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+:root {
+  --color-blue: #0060FF;
+  --color-black: #1D1D1D;
+  --color-gray: #F5F5F7;
+  --color-light-gray: #D8D8D8;
+  --color-orange: #FF7100;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+}
