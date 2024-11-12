@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="18px" viewBox="0 0 22 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="v2.2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="JB-Landing-Page-(v1.2.2)" transform="translate(-1139, -7666)" stroke="#FFFFFF">
+            <g id="Group-26" transform="translate(230, 7199)">
+                <g id="Group-17" transform="translate(0, 288.9978)">
+                    <g id="Group-18" transform="translate(845, 176.9986)">
+                        <g id="Group" transform="translate(65, 2)">
+                            <path d="M2,0 L18,0 C19.1,0 20,0.899993057 20,1.99998457 L20,13.999892 C20,15.0998835 19.1,15.9998766 18,15.9998766 L2,15.9998766 C0.9,15.9998766 0,15.0998835 0,13.999892 L0,1.99998457 C0,0.899993057 0.9,0 2,0 Z" id="Path"></path>
+                            <polyline id="Path" points="20 1.99998457 10 8.99993057 0 1.99998457"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
