@@ -1,0 +1,69 @@
+@forward 'helpers';
+
+button,
+.button {
+  border: none;
+  border-radius: 32px;
+  padding: 16px;
+  background-color: var(--color-gray);
+  cursor: pointer;
+  display: inline-block;
+
+  &:hover:after {
+    left: 5px;
+  }
+
+  &:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    left: 0;
+    background-image: url('images/icons/arrow-right--white.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    background-size: cover;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+  }
+
+  &-blue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    background-color: var(--color-blue);
+  }
+
+  &.back:before {
+    @extend .filter--blue;
+    content: '';
+    width: 20px;
+    height: 20px;
+    left: 0;
+    background-image: url('images/icons/arrow-right--white.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    background-size: cover;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+    transform: rotate(180deg);
+    margin-right: 10px;
+  }
+}
+
+.button-blue {
+
+  font-size: 22px;
+
+  img {
+    position: relative;
+    top: 2px;
+    margin-left: 8px;
+    margin-right: 20px;
+    height: 27px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(7%) saturate(0%) hue-rotate(22deg) brightness(106%) contrast(108%);
+  }
+}

@@ -1,0 +1,53 @@
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+.flex-push-left {
+  margin-left: auto;
+  
+  @include mobile {
+    margin-left: initial;
+  }
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.filter--blue {
+  filter: brightness(0) saturate(100%) invert(26%) sepia(100%) saturate(4392%) hue-rotate(214deg) brightness(101%) contrast(105%);
+}
+
+.fade {
+
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(245, 245, 247, 0) 50%, rgba(245, 245, 247, 1) 100%);
+    /* Adjust colors and opacity */
+    pointer-events: none;
+    /* Allows interaction with the image behind the overlay */
+    z-index: 1;
+    /* Places the overlay above the image */
+  }
+}
+

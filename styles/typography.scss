@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/inter.ttf") format("ttf");
+  font-weight: 300 400 500 600 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+  color: var(--color-black);
+  letter-spacing: -0.39px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -1.13px;
+}
+
+h2 {
+  font-size: 52px;
+  font-weight: bold;
+
+  @include mobile {
+    font-size: 38px;
+  }
+}
+
+h5 {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+p+p {
+  margin-top: 25px;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.caption {
+  font-size: 10px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.badge {
+  text-transform: uppercase;
+  font-size: 8px;
+  margin-left: 5px;
+  font-weight: 700;
+  position: relative;
+  top: 1px;
+  letter-spacing: initial;
+
+  &--blue {
+    @extend .badge;
+    color: var(--color-blue);
+  }
+
+  &--orange {
+    @extend .badge;
+    color: var(--color-orange);
+  }
+}
+
+.callout--blue {
+  color: var(--color-blue);
+}
