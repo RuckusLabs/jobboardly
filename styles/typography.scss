@@ -81,7 +81,21 @@ li {
 }
 
 .callout-block--blue {
-  color: white;
-  background-color: var(--color-blue);
   padding: 10px;
+  position: relative;
+  line-height: 1.5;
+
+  &:after {
+    content: '';
+    display: block;
+    background-color: var(--color-blue-transparent);
+    border-radius: 5px;
+    transform: skewY(-0.58deg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
 }

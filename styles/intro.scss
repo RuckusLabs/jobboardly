@@ -26,6 +26,15 @@
     }
   }
 
+  .subheadline {
+    font-size: 18px;
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+  
+
   .product-hunt {
     margin: 50px auto;
   }
