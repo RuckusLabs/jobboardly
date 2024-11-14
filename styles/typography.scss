@@ -79,3 +79,9 @@ li {
 .callout--blue {
   color: var(--color-blue);
 }
+
+.callout-block--blue {
+  color: white;
+  background-color: var(--color-blue);
+  padding: 10px;
+}
