@@ -35,9 +35,21 @@ h2 {
   }
 }
 
+h3 {
+  font-size: 48px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
 h5 {
   font-size: 24px;
   font-weight: 900;
+}
+
+h6 {
+  font-size: 18px;
 }
 
 p+p {
@@ -54,6 +66,18 @@ li {
   font-size: 10px;
   text-align: left;
   margin-top: 10px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
 }
 
 .badge {
@@ -100,5 +124,84 @@ li {
     right: 0;
     left: 0;
     z-index: -1;
+  }
+}
+
+p {
+
+  +p,
+  +a,
+  +h2,
+  +h3,
+  +h4,
+  +h5,
+  +h6 {
+    margin-top: 15px;
+  }
+}
+
+h1 {
+  +p,
+  +h2,
+  +h3,
+  +h4,
+  +h5,
+  +h6 {
+    margin-top: 25px;
+  }
+}
+
+h2 {
+  +p,
+  +h1,
+  +h3,
+  +h4,
+  +h5,
+  +h6 {
+    margin-top: 15px;
+  }
+}
+
+h3 {
+  +p,
+  +h1,
+  +h2,
+  +h4,
+  +h5,
+  +h6 {
+    margin-top: 15px;
+  }
+}
+
+h4 {
+  +p,
+  +h1,
+  +h2,
+  +h3,
+  +h5,
+  +h6 {
+    margin-top: 15px;
+  }
+}
+
+h5 {
+  +p,
+  +h1,
+  +h2,
+  +h3,
+  +h4,
+  +h6 {
+    margin-top: 15px;
+  }
+}
+
+h6 {
+  +p,
+  +h1,
+  +h2,
+  +h3,
+  +h4,
+  +h5 {
+    margin-top: 15px;
   }
 }
