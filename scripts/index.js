@@ -66,9 +66,22 @@ menuToggle.addEventListener('click', function () {
 // Close Mobile Menu on item click 
 const menuLinks = document.querySelectorAll('#nav-menu a');
 menuLinks.forEach(link => {
-  link.onclick = function () {
+  link.onClick = function() {
     document.querySelector('body').style.removeProperty('overflow');
     menuToggle.classList.toggle('open');
     navMenu.classList.toggle('open');
   }
 });
+
+// Board Price Toggle
+const pricingOptions = document.querySelectorAll('.board-pricing-options .pricing-option');
+pricingOptions.forEach(option => {
+  option.onclick = function() {
+    pricingOptions.forEach(btn => btn.classList.remove('active'));
+    this.classList.add('active');
+    let price = option.dataset.price;
+    let originalPrice = option.dataset.og;
+    document.querySelector('.pricing-cta .price').innerHTML = price;
+    document.querySelector('.pricing-cta .original-price').innerHTML = originalPrice;
+  }
+})
