@@ -81,7 +81,9 @@ pricingOptions.forEach(option => {
     this.classList.add('active');
     let price = option.dataset.price;
     let originalPrice = option.dataset.og;
+    let meta = option.dataset.meta;
     document.querySelector('.pricing-cta .price').innerHTML = price;
+    document.querySelector('.pricing-cta .meta').innerHTML = meta;
     document.querySelector('.pricing-cta .original-price').innerHTML = originalPrice;
   }
 })
