@@ -48,6 +48,7 @@
   .pricing-cta {
     max-width: 313px;
     padding: 75px 25px;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,7 +60,7 @@
     @include mobile {
       margin-top: 50px;
       padding: 25px;
-      padding-top: 90px;
+      padding-top: 100px;
     }
 
     .board-pricing-options {
@@ -67,14 +68,14 @@
       align-items: center;
       justify-content: space-between;
       position: absolute;
-      top: 25px;
+      top: 45px;
     }
 
     .pricing-option {
-
       padding: 8px 10px;
       background: none;
       margin: 0 5px;
+      position: relative;
 
       &.active {
         color: var(--color-blue);
@@ -83,6 +84,16 @@
 
       &:after {
         content: none;
+      }
+
+      .badge {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        left: 0;
+        top: -15px;
+        font-size: 10px;
       }
     }
 
